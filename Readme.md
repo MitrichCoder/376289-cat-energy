@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Дмитрий Шешков](https://up.htmlacademy.ru/adaptive/14/user/376289).
-* Наставник: `Неизвестно`.
+* Наставник: Вадим Новаш.
 
 ---
 
