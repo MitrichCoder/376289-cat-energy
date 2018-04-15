@@ -4,27 +4,25 @@
     <meta charset="utf-8">
     <title>Cat Energy - функциональное питание для котов и их подруг</title>
   </head>
-  <body class="index-page">
+  <body class="page">
 
     <header class="main-header">
       <div class="container">
-        <a class="main-header__logo" href="#">
+        <a class="main-header__logo">
           <img class="main-header__logo-img" src="http://placehold.it/33x38" width="33" height="38" alt="Логотип Cat Energy">
-        </a>
-        <a class="main-header__logo" href="#">
           <img class="main-header__logo-txt" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
         </a>
 
         <nav class="main-nav" aria-label="Основное меню">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Главная</a>
+              <a class="site-list__link">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Каталог продукции</a>
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Подбор программы</a>
+              <a class="site-list__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
           <button class="main-nav__toggle" type="button">Меню</button>
@@ -37,10 +35,10 @@
 
       <section class="promo">
         <div class="container">
-          <h1 class="page-content__title">Функциональное питание для котов</h1>
+          <h1 class="promo__title">Функциональное питание для котов</h1>
           <h2 class="promo__slogan">Занялся собой? Займись котом!</h2>
           <img class="promo__img" src="http://placehold.it/280x271" width="280" height="271" alt="Супер-еда Cat Energy для котов и их подруг">
-          <a href="#" class="button">Подобрать программу</a>
+          <a class="button promo__button" href="form.html">Подобрать программу</a>
         </div>
       </section>
 
@@ -50,19 +48,19 @@
           <ul class="categories__list">
             <li class="categories__item">
               <h3 class="categories__title categories__title--thin">Похудение</h3>
-              <p class="categories__discr">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <p class="categories__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
               <a class="categories__link" href="#" >Каталог Slim</a>
             </li>
             <li class="categories__item">
               <h3 class="categories__title categories__title--strong">Набор массы</h3>
-              <p class="categories__discr">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <p class="categories__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
               <a class="categories__link" href="#" >Каталог Pro</a>
             </li>
           </ul>
         </section>
 
         <section class="advantages">
-          <h2 class="section-title">Как это работает</h2>
+          <h2 class="advantages__title">Как это работает</h2>
           <ul class="advantages__list">
             <li class="advantages__item advantages__item--useful">Функциональное питание содержит только полезные питательные вещества.</li>
             <li class="advantages__item advantages__item--fast">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</li>
@@ -103,18 +101,18 @@
     </main>
 
     <footer class="page-footer">
-      <div class="cooperation">
+      <div class="cooperation cooperation--grey">
         <div class="container">
           <h2 class="cooperation__title">Приглашаем к сотрудничеству</h2>
           <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
       </div>
-      <div class="page-footer__map">
-        <div class="container"></div>
-      </div>
+
+      <div class="page-footer__map" id="map"></div>
+
       <div class="page-footer__contacts">
         <div class="container">
-          <a class="page-footer__logo" href="#">
+          <a class="page-footer__logo">
             <img class="page-footer__logo-txt" src="http://placehold.it/128x24" width="128" height="24" alt="Cat Energy">
           </a>
           <ul class="social">

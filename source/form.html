@@ -8,23 +8,21 @@
 
     <header class="main-header">
       <div class="container">
-        <a class="main-header__logo" href="#">
+        <a class="main-header__logo" href="index.html">
           <img class="main-header__logo-img" src="http://placehold.it/33x38" width="33" height="38" alt="Логотип Cat Energy">
-        </a>
-        <a class="main-header__logo" href="#">
           <img class="main-header__logo-txt" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
         </a>
 
         <nav class="main-nav" aria-label="Основное меню">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Главная</a>
+              <a class="site-list__link" href="index.html">Главная</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Каталог продукции</a>
+              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item">
-              <a class="site-list__link" href="#">Подбор программы</a>
+              <a class="site-list__link">Подбор программы</a>
             </li>
           </ul>
           <button class="main-nav__toggle" type="button">Меню</button>
@@ -62,15 +60,15 @@
             <legend class="visually-hidden">Назначение питания</legend>
             <ul class="request-list">
               <li class="request-item">
-                <input class="visually-hidden" id="thin" name="thin" value="Похудение" type="radio" checked>
+                <input class="visually-hidden" id="thin" name="target" value="Похудение" type="radio" checked>
                 <label class="request__label request__label--radio" for="thin">Похудение</label>
               </li>
               <li class="request-item">
-                <input class="visually-hidden" id="power" name="power" value="Набор массы" type="radio">
+                <input class="visually-hidden" id="power" name="target" value="Набор массы" type="radio">
                 <label class="request__label request__label--radio" for="power">Набор массы</label>
               </li>
               <li class="request-item">
-                <input class="visually-hidden" id="dontknow" name="dontknow" value="Не знаю (нужен ваш совет)" type="radio">
+                <input class="visually-hidden" id="dontknow" name="target" value="Не знаю (нужен ваш совет)" type="radio">
                 <label class="request__label request__label--radio" for="dontknow">Не знаю (нужен ваш совет)</label>
               </li>
             </ul>
@@ -125,18 +123,18 @@
     </main>
 
     <footer class="page-footer">
-      <div class="cooperation">
+      <div class="cooperation cooperation--grey">
         <div class="container">
           <h2 class="cooperation__title">Приглашаем к сотрудничеству</h2>
           <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
       </div>
-      <div class="page-footer__map">
-        <div class="container"></div>
-      </div>
+
+      <div class="page-footer__map" id="map"></div>
+
       <div class="page-footer__contacts">
         <div class="container">
-          <a class="page-footer__logo" href="#">
+          <a class="page-footer__logo" href="index.html">
             <img class="page-footer__logo-txt" src="http://placehold.it/128x24" width="128" height="24" alt="Cat Energy">
           </a>
           <ul class="social">
