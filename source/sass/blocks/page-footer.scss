@@ -1,0 +1,38 @@
+.page-footer__map {
+  min-height: 362px;
+  background-color: #fdf7ef;
+
+  .container {
+    position: relative;
+    padding: 0;
+
+    &::before {
+      content: "";
+      display: block;
+      width: 124px;
+      height: 106px;
+      position: absolute;
+      top: 156px;
+      left: 86px;
+      background-image: url("../img/map-pin.png");
+      z-index: 5;
+    }
+  }
+}
+
+.page-footer__map-image {
+  margin: 0 auto;
+  width: 320px;
+}
+
+.page-footer__contacts {
+  padding-top: 39px;
+  background-color: #f2f2f2;
+}
+
+.page-footer__logo {
+  width: 128px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 31px;
+}

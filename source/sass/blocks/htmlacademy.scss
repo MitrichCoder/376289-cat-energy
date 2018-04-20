@@ -1,0 +1,13 @@
+.htmlacademy {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 78px;
+
+  @include list-reset();
+}
+
+.htmlacademy__link {
+  font-size: 16px;
+  color: $text-color;
+}

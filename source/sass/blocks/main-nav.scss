@@ -1,0 +1,85 @@
+.main-nav__list {
+  display: none;
+
+  @include list-reset();
+}
+
+.main-nav__list--show {
+  display: block;
+}
+
+.main-nav__item {
+  @include border-top(1px, #e6e6e6);
+}
+
+.main-nav__link {
+  display: block;
+  padding: 22px 10px 23px;
+  font-family: "Oswald", sans-serif;
+  color: $heading-color;
+  font-size: 20px;
+  line-height: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.main-nav__toggle {
+  padding: 8px 5px;
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background-color: transparent;
+  border: none;
+  font-size: 0;
+  cursor: pointer;
+}
+
+.lines {
+  display: block;
+}
+
+.lines__line {
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  display: block;
+  margin: 6px auto;
+  transition: all 0.15s ease-in-out;
+}
+
+.lines__line--one {
+  margin-top: 0;
+}
+
+.lines__line--three {
+  margin-bottom: 0;
+}
+
+.main-nav__toggle:focus {
+  outline: 1px solid #eeeeee;
+}
+
+
+.lines.lines--active {
+  transition: all 0.15s ease-in-out;
+  transition-delay: 0.3s;
+  transform: rotate(45deg);
+}
+
+.lines.lines--active .lines__line--two {
+  width: 0;
+}
+
+.lines.lines--active .lines__line--one,
+.lines.lines--active .lines__line--three {
+  transition-delay: 0.15s;
+}
+
+.lines.lines--active .lines__line--one {
+  transform: translateY(9px);
+}
+
+.lines.lines--active .lines__line--three {
+  transform: translateY(-8px) rotate(90deg);
+}

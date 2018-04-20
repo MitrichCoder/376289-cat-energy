@@ -1,0 +1,12 @@
+.main-header {
+  position: relative;
+  background-color: $white;
+
+  @include border-bottom(1px, #e6e6e6);
+}
+
+.main-header__logo {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 11px;
+}

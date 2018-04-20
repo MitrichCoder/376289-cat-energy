@@ -1,0 +1,47 @@
+.other-goods {
+  @include list-reset();
+}
+
+.other-goods__item {
+  padding-top: 15px;
+  padding-bottom: 17px;
+  border-top: 1px solid #cdcdcd;
+
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
+}
+
+.other-goods__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-family: $heading-font;
+  color: $heading-color;
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.other-goods__table {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.other-goods__price {
+  text-align: right;
+}
+
+.other-goods__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-family: $heading-font;
+  color: $white;
+  height: 40px;
+  font-size: 14px;
+  line-height: 18px;
+  background-color: $primary-color;
+  text-transform: uppercase;
+}
