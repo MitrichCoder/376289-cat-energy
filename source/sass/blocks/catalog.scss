@@ -1,0 +1,25 @@
+.catalog__list {
+  @include list-reset();
+}
+
+.catalog__promo {
+  position: relative;
+  width: 280px;
+  height: 289px;
+  padding: 50px;
+  color: $white;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+
+  &::before {
+    content: "";
+    display: block;
+    margin: 10px auto 50px;
+    width: 55px;
+    height: 60px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+  }
+}

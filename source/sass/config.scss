@@ -1,0 +1,59 @@
+// fonts & font's colors
+$heading-font: "Oswald", sans-serif;
+$heading-color: #111111;
+$text-font: "Arial", sans-serif;
+$text-color: #444444;
+
+// colors
+$primary-color: #68b738;
+$white: #ffffff;
+$grey: #f2f2f2;
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $heading-font;
+  color: $white;
+  text-transform: uppercase;
+}

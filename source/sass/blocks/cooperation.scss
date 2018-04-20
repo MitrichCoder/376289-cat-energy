@@ -1,0 +1,29 @@
+.cooperation {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.cooperation .container {
+  display: flex;
+  flex-direction: row;
+}
+
+.cooperation__title {
+  width: 140px;
+  margin: 0;
+  font-family: $heading-font;
+  color: $heading-color;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.cooperation__address {
+  width: 140px;
+  margin: 0;
+}
+
+.cooperation--grey {
+  background-color: #f2f2f2;
+}

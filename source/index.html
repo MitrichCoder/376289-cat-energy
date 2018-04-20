@@ -2,34 +2,40 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cat Energy - функциональное питание для котов и их подруг</title>
+    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page">
 
     <header class="main-header">
       <div class="container">
         <a class="main-header__logo">
-          <img class="main-header__logo-img" src="http://placehold.it/33x38" width="33" height="38" alt="Логотип Cat Energy">
-          <img class="main-header__logo-txt" src="http://placehold.it/101x18" width="101" height="18" alt="Cat Energy">
+          <img class="main-header__logo-img" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy">
         </a>
-
         <nav class="main-nav" aria-label="Основное меню">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item">
-              <a class="site-list__link">Главная</a>
+          <ul class="main-nav__list main-nav__list--show">
+            <li class="main-nav__item">
+              <a class="main-nav__link">Главная</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="catalog.html">Каталог продукции</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Подбор программы</a>
+            <li class="main-nav__item">
+              <a class="main-nav__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
-          <button class="main-nav__toggle" type="button">Меню</button>
+          <button class="main-nav__toggle" type="button">Меню
+            <span class="lines lines--active">
+              <span class="lines__line lines__line--one"></span>
+              <span class="lines__line lines__line--two"></span>
+              <span class="lines__line lines__line--three"></span>
+            </span>
+          </button>
         </nav>
       </div>
     </header>
-
 
     <main class="page-content">
 
@@ -37,8 +43,8 @@
         <div class="container">
           <h1 class="promo__title">Функциональное питание для котов</h1>
           <h2 class="promo__slogan">Занялся собой? Займись котом!</h2>
-          <img class="promo__img" src="http://placehold.it/280x271" width="280" height="271" alt="Супер-еда Cat Energy для котов и их подруг">
-          <a class="button promo__button" href="form.html">Подобрать программу</a>
+          <img class="promo__img" src="img/index-can-mobile@1x.png" width="280" height="271" alt="Супер-еда Cat Energy для котов и их подруг">
+          <a class="promo__button button" href="form.html">Подобрать программу</a>
         </div>
       </section>
 
@@ -72,21 +78,27 @@
 
       <section class="example">
         <div class="container">
-          <h2 class="section-title">Живой пример</h2>
+          <h2 class="example-title">Живой пример</h2>
           <p class="example__discr">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
           <ul class="example__list">
-            <li class="example__item">5 кг<span>снижение веса</span></li>
-            <li class="example__item">60 дней<span>зтрачено времени</span></li>
+            <li class="example__item">
+              <p class="example__parameter">5 кг</p>
+              <span class="example__comment">снижение веса</span>
+            </li>
+            <li class="example__item">
+              <p class="example__parameter">60 дней</p>
+              <span class="example__comment">затрачено времени</span>
+            </li>
           </ul>
           <p class="example__price">Затраты на питание: 15 000 руб.</p>
 
           <div class="example__slider">
-            <ul class="example__list">
-              <li class="example__item">
-                <img class="example__img example__img--show" src="http://placehold.it/280x240" width="280" height="240" alt="Вот так было">
+            <ul class="example__slider-list">
+              <li class="example__slider-item">
+                <img class="example__img example__img--show" src="img/before-mobile@1x.png" width="320" height="240" alt="Вот так было">
               </li>
-              <li class="example__item">
-                <img class="example__img" src="http://placehold.it/280x240" width="280" height="240" alt="А вто стало">
+              <li class="example__slider-item">
+                <img class="example__img" src="img/after-mobile@1x.png" width="320" height="240" alt="А вто стало">
               </li>
             </ul>
 
@@ -101,29 +113,33 @@
     </main>
 
     <footer class="page-footer">
-      <div class="cooperation cooperation--grey">
+      <div class="cooperation">
         <div class="container">
-          <h2 class="cooperation__title">Приглашаем к сотрудничеству</h2>
+          <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
           <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>
       </div>
 
-      <div class="page-footer__map" id="map"></div>
+      <div class="page-footer__map" id="map">
+        <div class="container">
+          <img class="page-footer__map-image" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Как нас найти">
+        </div>
+      </div>
 
       <div class="page-footer__contacts">
         <div class="container">
           <a class="page-footer__logo">
-            <img class="page-footer__logo-txt" src="http://placehold.it/128x24" width="128" height="24" alt="Cat Energy">
+            <img class="page-footer__logo-txt" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
           </a>
           <ul class="social">
             <li class="social__item">
               <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">Мы в Вконтакте</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">Мы в Фейсбуке</a>
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" target="_blank">Мы в Инстаграме</a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" target="_blank">Мы в Инстаграме</a>
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">Мы в Фейсбуке</a>
             </li>
           </ul>
           <ul class="htmlacademy">
@@ -132,7 +148,7 @@
             </li>
             <li class="htmlacademy__item">
               <a class="htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-                <img class="htmlacademy__logo" src="http://placehold.it/27x34" alt="Логотип HTML Academy">
+                <img class="htmlacademy__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
               </a>
             </li>
           </ul>
