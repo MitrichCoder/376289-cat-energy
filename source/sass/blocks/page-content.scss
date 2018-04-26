@@ -9,18 +9,38 @@
   font-weight: 300;
 }
 
-.page-content__title--wide {
+.page-content__title {
   padding-right: 20px;
   padding-left: 20px;
 }
 
 .page-content__discription {
+  padding-right: 40px;
   width: 260px;
   margin-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-family: $heading-font;
   color: $heading-color;
   font-size: 14px;
   line-height: 18px;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+
+  .page-content__title,
+  .page-content__discription {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-content__title,
+  .page-content__discription {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }

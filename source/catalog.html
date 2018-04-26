@@ -4,43 +4,48 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cat Energy - Каталог продукции</title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page">
+  <body>
 
     <header class="main-header">
       <div class="container">
-        <a class="main-header__logo" href="index.html">
-          <img class="main-header__logo-img" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy">
-        </a>
-        <nav class="main-nav" aria-label="Основное меню">
-          <ul class="main-nav__list main-nav__list--show">
+        <nav class="main-nav main-nav--nojs" aria-label="Основное меню">
+          <a class="main-nav__logo" href="index.html">
+            <picture>
+              <source class="main-nav__logo--desktop" media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source class="main-nav__logo--tablet" media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-nav__logo--mobile" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy">
+            </picture>
+          </a>
+
+          <button class="main-nav__toggle" type="button">Меню
+            <span class="main-nav__lines">
+              <span class="main-nav__line main-nav__line--one"></span>
+              <span class="main-nav__line main-nav__line--two"></span>
+              <span class="main-nav__line main-nav__line--three"></span>
+            </span>
+          </button>
+
+          <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link">Каталог продукции</a>
+              <a class="main-nav__link main-nav__link--curent">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
               <a class="main-nav__link" href="form.html">Подбор программы</a>
             </li>
           </ul>
-          <button class="main-nav__toggle" type="button">Меню
-            <span class="lines lines--active">
-              <span class="lines__line lines__line--one"></span>
-              <span class="lines__line lines__line--two"></span>
-              <span class="lines__line lines__line--three"></span>
-            </span>
-          </button>
         </nav>
       </div>
     </header>
 
 
     <main class="page-content">
-      <div class="container container--wide">
-        <h1 class="page-content__title page-content__title--wide">Каталог продукции</h1>
+      <div class="container">
+        <h1 class="page-content__title">Каталог продукции</h1>
 
         <section class="catalog">
           <h2 class="visually-hidden">Список товаров</h2>
@@ -68,7 +73,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="good-list__button" href="#">Заказать</a>
+              <a class="good-list__button button" href="#">Заказать</a>
             </li>
 
             <li class="good-list__item">
@@ -94,7 +99,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="good-list__button" href="#">Заказать</a>
+              <a class="good-list__button button" href="#">Заказать</a>
             </li>
 
             <li class="good-list__item">
@@ -120,7 +125,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="good-list__button" href="#">Заказать</a>
+              <a class="good-list__button button" href="#">Заказать</a>
             </li>
 
             <li class="good-list__item">
@@ -146,7 +151,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="good-list__button" href="#">Заказать</a>
+              <a class="good-list__button button" href="#">Заказать</a>
             </li>
 
             <li class="good-list__item">
@@ -172,7 +177,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="good-list__button" href="#">Заказать</a>
+              <a class="good-list__button button" href="#">Заказать</a>
             </li>
 
             <li class="good-list__item">
@@ -198,7 +203,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="good-list__button" href="#">Заказать</a>
+              <a class="good-list__button button" href="#">Заказать</a>
             </li>
 
             <li class="good-list__item">
@@ -224,7 +229,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="good-list__button" href="#">Заказать</a>
+              <a class="good-list__button button" href="#">Заказать</a>
             </li>
 
             <li class="good-list__item more-goods">
@@ -239,61 +244,63 @@
       <div class="container">
         <section class="additional">
           <h2 class="additional__title">Дополнительные товары</h2>
-          <ul class="additional__list other-goods">
-            <li class="other-goods__item">
-              <a class="other-goods__link" href="#">
-                <h3 class="other-goods__title">Сахарозаменитель</h3>
-              </a>
-              <table class="other-goods__table">
-                <tr>
-                  <td class="other-goods__discr">1 упаковка (100 г)</td>
-                  <td class="other-goods__price">100 Р</td>
-                </tr>
-              </table>
-              <a class="other-goods__button" href="#">Заказать</a>
-            </li>
+          <div class="additional__wrap">
+            <ul class="additional__list other-goods">
+              <li class="other-goods__item">
+                <a class="other-goods__link" href="#">
+                  <h3 class="other-goods__title">Сахарозаменитель</h3>
+                </a>
+                <table class="other-goods__table">
+                  <tr>
+                    <td class="other-goods__discr">1 упаковка (100 г)</td>
+                    <td class="other-goods__price">100 Р</td>
+                  </tr>
+                </table>
+                <a class="other-goods__button" href="#">Заказать</a>
+              </li>
 
-            <li class="other-goods__item">
-              <a class="other-goods__link" href="#">
-                <h3 class="other-goods__title">Питьевая вода</h3>
-              </a>
-              <table class="other-goods__table">
-                <tr>
-                  <td class="other-goods__discr">5 литров</td>
-                  <td class="other-goods__price">50 Р</td>
-                </tr>
-              </table>
-              <a class="other-goods__button" href="#">Заказать</a>
-            </li>
+              <li class="other-goods__item">
+                <a class="other-goods__link" href="#">
+                  <h3 class="other-goods__title">Питьевая вода</h3>
+                </a>
+                <table class="other-goods__table">
+                  <tr>
+                    <td class="other-goods__discr">5 литров</td>
+                    <td class="other-goods__price">50 Р</td>
+                  </tr>
+                </table>
+                <a class="other-goods__button" href="#">Заказать</a>
+              </li>
 
-            <li class="other-goods__item">
-              <a class="other-goods__link" href="#">
-                <h3 class="other-goods__title">Молоко</h3>
-              </a>
-              <table class="other-goods__table">
-                <tr>
-                  <td class="other-goods__discr">1 литр</td>
-                  <td class="other-goods__price">100 Р</td>
-                </tr>
-              </table>
-              <a class="other-goods__button" href="#">Заказать</a>
-            </li>
+              <li class="other-goods__item">
+                <a class="other-goods__link" href="#">
+                  <h3 class="other-goods__title">Молоко</h3>
+                </a>
+                <table class="other-goods__table">
+                  <tr>
+                    <td class="other-goods__discr">1 литр</td>
+                    <td class="other-goods__price">100 Р</td>
+                  </tr>
+                </table>
+                <a class="other-goods__button" href="#">Заказать</a>
+              </li>
 
-            <li class="other-goods__item">
-              <a class="other-goods__link" href="#">
-                <h3 class="other-goods__title">Витамины</h3>
-              </a>
-              <table class="other-goods__table">
-                <tr>
-                  <td class="other-goods__discr">1 упаковка (30 г)</td>
-                  <td class="other-goods__price">300 Р</td>
-                </tr>
-              </table>
-              <a class="other-goods__button" href="#">Заказать</a>
-            </li>
-          </ul>
+              <li class="other-goods__item">
+                <a class="other-goods__link" href="#">
+                  <h3 class="other-goods__title">Витамины</h3>
+                </a>
+                <table class="other-goods__table">
+                  <tr>
+                    <td class="other-goods__discr">1 упаковка (30 г)</td>
+                    <td class="other-goods__price">300 Р</td>
+                  </tr>
+                </table>
+                <a class="other-goods__button" href="#">Заказать</a>
+              </li>
+            </ul>
 
-          <p class="catalog__promo">Закажите все<br>и получите чехол для кота в подарок!</p>
+            <p class="catalog__promo">Закажите все<br>и получите чехол для кота в подарок!</p>
+          </div>
         </section>
 
 
@@ -301,17 +308,18 @@
     </main>
 
     <footer class="page-footer">
-      <div class="cooperation cooperation--grey">
+      <div class="cooperation">
         <div class="container">
           <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
       </div>
 
-      <div class="page-footer__map" id="map">
+      <div class="page-footer__map">
         <div class="container">
           <img class="page-footer__map-image" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Как нас найти">
         </div>
+        <div class="page-footer__map-container" id="map"></div>
       </div>
 
       <div class="page-footer__contacts">
@@ -344,6 +352,9 @@
       </div>
 
     </footer>
+
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/script.js"></script>
 
   </body>
 </html>

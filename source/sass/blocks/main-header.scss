@@ -1,12 +1,36 @@
 .main-header {
   position: relative;
+  margin-bottom: 22px;
   background-color: $white;
-
-  @include border-bottom(1px, #e6e6e6);
 }
 
-.main-header__logo {
-  display: block;
-  padding-top: 12px;
-  padding-bottom: 11px;
+@media (min-width: $tablet-width) {
+
+  .main-header {
+    min-height: 105px;
+    margin-bottom: 0;
+    border-bottom: none;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+
+  .main-header--index {
+    margin-bottom: 80px;
+    min-height: 696px;
+    background-image: linear-gradient(to right, #ffffff 50%, #63a73a 50%, #63a73a 100%);
+  }
+
+  .main-header--index::before {
+    content: "";
+    position: absolute;
+    width: 680px;
+    height: 696px;
+    top: 0;
+    left: 52%;
+    /*z-index: 0;*/
+    background-image: url(../img/index-background-desktop@2x.jpg);
+    background-size: cover;
+  }
 }

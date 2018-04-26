@@ -42,3 +42,28 @@
   line-height: 18px;
   background-color: $primary-color;
 }
+
+@media (min-width: $tablet-width) {
+  .good-list {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .good-list__item {
+    flex-direction: column;
+    align-items: center;
+    width: 324px;
+    margin-bottom: 60px;
+    background-color: $grey;
+    border: none;
+  }
+
+}
+
+@media (min-width: $desktop-width) {
+  .good-list__item {
+    width: 245px;
+  }
+}

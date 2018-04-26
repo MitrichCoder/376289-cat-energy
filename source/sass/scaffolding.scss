@@ -1,0 +1,83 @@
+/* FONTS */
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald Regular"),
+       local("Oswald-Regular"),
+       url(../fonts/oswaldregular.woff2) format('woff2'),
+       url(../fonts/oswaldregular.woff) format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Oswald";
+  src: local("Oswald Medium"),
+       local("Oswald-Medium"),
+       url(../fonts/oswaldmedium.woff2) format('woff2'),
+       url(../fonts/oswaldmedium.woff) format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  min-width: 320px;
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: $text-font;
+  color: $text-color;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 300;
+
+  background-color: $white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: $heading-font;
+  color: $white;
+  text-transform: uppercase;
+}

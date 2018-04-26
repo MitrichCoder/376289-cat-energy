@@ -4,18 +4,30 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Cat Energy - подбор программы питания</title>
-    <link href="https://fonts.googleapis.com/css?family=Oswald:400,600&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page">
+  <body>
 
     <header class="main-header">
       <div class="container">
-        <a class="main-header__logo" href="index.html">
-          <img class="main-header__logo-img" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy">
-        </a>
-        <nav class="main-nav" aria-label="Основное меню">
-          <ul class="main-nav__list main-nav__list--show">
+        <nav class="main-nav main-nav--nojs" aria-label="Основное меню">
+          <a class="main-nav__logo" href="index.html">
+            <picture>
+              <source class="main-nav__logo--desktop" media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+              <source class="main-nav__logo--tablet" media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="main-nav__logo--mobile" src="img/logo-mobile.svg" width="191" height="38" alt="Логотип Cat Energy">
+            </picture>
+          </a>
+
+          <button class="main-nav__toggle" type="button">Меню
+            <span class="main-nav__lines">
+              <span class="main-nav__line main-nav__line--one"></span>
+              <span class="main-nav__line main-nav__line--two"></span>
+              <span class="main-nav__line main-nav__line--three"></span>
+            </span>
+          </button>
+
+          <ul class="main-nav__list">
             <li class="main-nav__item">
               <a class="main-nav__link" href="index.html">Главная</a>
             </li>
@@ -23,16 +35,9 @@
               <a class="main-nav__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__link">Подбор программы</a>
+              <a class="main-nav__link main-nav__link--curent">Подбор программы</a>
             </li>
           </ul>
-          <button class="main-nav__toggle" type="button">Меню
-            <span class="lines lines--active">
-              <span class="lines__line lines__line--one"></span>
-              <span class="lines__line lines__line--two"></span>
-              <span class="lines__line lines__line--three"></span>
-            </span>
-          </button>
         </nav>
       </div>
     </header>
@@ -41,31 +46,27 @@
       <div class="container">
         <h1 class="page-content__title">Подбор программы</h1>
         <p class="page-content__discription">Заполните анкету и мы подберем программу питания для вашего кота</p>
-      </div>
 
         <form class="request" action="https://echo.htmlacademy.ru" method="post" autocomplete="off">
-          <div class="container">
           <fieldset class="request__fieldset request__fieldset--info">
             <legend class="visually-hidden">Информация о коте</legend>
             <ul class="request-list">
               <li class="request-item">
-                <label class="request__label" for="name">Имя:*</label>
+                <label class="request__label request__label--name" for="name">Имя:*</label>
                 <input class="request__input" type="text" id="name" name="name" placeholder="Барсик" required>
               </li>
               <li class="request-item">
-                <label class="request__label" for="weight">Вес (кг):*</label>
+                <label class="request__label request__label--weight" for="weight">Вес (кг):*</label>
                 <input class="request__input" type="text" id="weight" name="weight" placeholder="7" required>
               </li>
               <li class="request-item">
-                <label class="request__label" for="age">Возраст (лет):*</label>
+                <label class="request__label request__label--age" for="age">Возраст (лет):*</label>
                 <input class="request__input" type="text" id="age" name="age" placeholder="7">
               </li>
             </ul>
           </fieldset>
-          </div>
 
           <fieldset class="request__fieldset request__fieldset--target">
-            <div class="container container--wide">
               <legend class="visually-hidden">Назначение питания</legend>
               <ul class="request-list request-list--target">
                 <li class="request-item">
@@ -81,19 +82,17 @@
                   <label class="request__label request__label--radio" for="dontknow">Не знаю (нужен ваш совет)</label>
                 </li>
               </ul>
-            </div>
           </fieldset>
 
-        <div class="container">
           <fieldset class="request__fieldset request__fieldset--contacts">
             <legend class="request__title">Контактные данные (владельца кота)</legend>
             <ul class="request-list">
               <li class="request-item">
-                <label class="request__label" for="email">E-mail:*</label>
+                <label class="request__label request__label--email" for="email">E-mail:*</label>
                 <input class="request__input" type="email" id="email" name="email" placeholder="kuklachev@gmail.com" required>
               </li>
               <li class="request-item">
-                <label class="request__label" for="tel">Телефон:*</label>
+                <label class="request__label request__label--tel" for="tel">Телефон:*</label>
                 <input class="request__input" type="tel" id="tel" name="tel" placeholder="8 (960) 900-60-900" required>
               </li>
             </ul>
@@ -126,9 +125,10 @@
             </ul>
           </fieldset>
 
-          <button class="request__button" type="submit">Отправить заявку</button>
-
-          <p class="request__form-comment">* — Обязательные поля</p>
+          <div class="request__button--wrap">
+            <button class="request__button" type="submit">Отправить заявку</button>
+            <p class="request__form-comment">* — Обязательные поля</p>
+          </div>
 
         </div>
         </form>
@@ -136,17 +136,18 @@
     </main>
 
     <footer class="page-footer">
-      <div class="cooperation cooperation--grey">
+      <div class="cooperation">
         <div class="container">
           <h2 class="cooperation__title">Приглашаем к сотрудничеству дилеров!</h2>
-          <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+          <p class="cooperation__address">ул. Большая Конюшенная, д. 19/8 <span>Санкт-Петербург</span></p>
         </div>
       </div>
 
-      <div class="page-footer__map" id="map">
+      <div class="page-footer__map">
         <div class="container">
           <img class="page-footer__map-image" src="img/bg-map-mobile@1x.png" width="320" height="362" alt="Как нас найти">
         </div>
+        <div class="page-footer__map-container" id="map"></div>
       </div>
 
       <div class="page-footer__contacts">
@@ -179,6 +180,9 @@
       </div>
 
     </footer>
+
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script src="js/script.js"></script>
 
   </body>
 </html>
