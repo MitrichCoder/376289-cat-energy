@@ -36,7 +36,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .cooperation .container {
     justify-content: space-between;
   }
@@ -52,7 +51,6 @@
 }
 
 @media (min-width: $desktop-width) {
-
   .cooperation {
     position: absolute;
     top: 97px;
@@ -66,5 +64,4 @@
   .cooperation__address {
     text-align: left;
   }
-
 }

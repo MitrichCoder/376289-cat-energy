@@ -7,17 +7,13 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .container {
     max-width: $tablet-width;
   }
-
 }
 
 @media (min-width: $desktop-width) {
-
   .container {
     max-width: $desktop-width;
   }
-
 }

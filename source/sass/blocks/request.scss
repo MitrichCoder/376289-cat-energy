@@ -235,6 +235,8 @@ input[type="checkbox"]:checked ~ .request__label--checkbox::after {
 
   .request__button--wrap {
     display: flex;
+    padding-right: 30px;
+    padding-left: 30px;
   }
 
   .request__button {
@@ -244,12 +246,6 @@ input[type="checkbox"]:checked ~ .request__label--checkbox::after {
   .request__form-comment {
     width: 195px;
   }
-
-  .request__button--wrap {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-
 }
 
 @media (min-width: $desktop-width) {
@@ -300,5 +296,4 @@ input[type="checkbox"]:checked ~ .request__label--checkbox::after {
     padding-right: 40px;
     padding-left: 40px;
   }
-
 }

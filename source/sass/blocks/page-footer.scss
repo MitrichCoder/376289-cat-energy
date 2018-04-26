@@ -11,18 +11,6 @@
     position: relative;
     height: 362px;
     padding: 0;
-
-    /*&::before {
-      content: "";
-      display: block;
-      width: 124px;
-      height: 106px;
-      position: absolute;
-      top: 156px;
-      left: 86px;
-      background-image: url("../img/map-pin.png");
-      z-index: 5;
-    }*/
   }
 }
 
@@ -78,9 +66,4 @@
   .page-footer__map-container {
     min-height: 400px;
   }
-}
-
-@media (min-width: $desktop-width) {
-
-
 }

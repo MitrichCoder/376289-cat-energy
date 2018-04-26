@@ -2,6 +2,8 @@
   margin: 0;
   margin-bottom: 25px;
   padding-top: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   font-family: $heading-font;
   color: $heading-color;
   font-size: 36px;
@@ -9,13 +11,7 @@
   font-weight: 300;
 }
 
-.page-content__title {
-  padding-right: 20px;
-  padding-left: 20px;
-}
-
 .page-content__discription {
-  padding-right: 40px;
   width: 260px;
   margin-bottom: 40px;
   padding-left: 20px;
@@ -29,7 +25,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .page-content__title,
   .page-content__discription {
     padding-right: 30px;

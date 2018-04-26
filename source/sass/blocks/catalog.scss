@@ -1,7 +1,7 @@
 .catalog {
-    padding-right: 20px;
-    padding-left: 20px;
-  }
+  padding-right: 20px;
+  padding-left: 20px;
+}
 
 .catalog__list {
   @include list-reset();
@@ -30,7 +30,6 @@
 }
 
 @media (min-width: $tablet-width) {
-
   .catalog {
     padding-right: 30px;
     padding-left: 30px;
