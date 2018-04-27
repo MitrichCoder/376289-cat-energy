@@ -1,22 +1,16 @@
+.page-footer {
+  position: relative;
+}
+
 .page-footer__map {
+  position: relative;
   min-height: 362px;
   background-color: #fdf7ef;
 
   .container {
     position: relative;
+    height: 362px;
     padding: 0;
-
-    &::before {
-      content: "";
-      display: block;
-      width: 124px;
-      height: 106px;
-      position: absolute;
-      top: 156px;
-      left: 86px;
-      background-image: url("../img/map-pin.png");
-      z-index: 5;
-    }
   }
 }
 
@@ -35,4 +29,41 @@
   display: block;
   margin: 0 auto;
   margin-bottom: 31px;
+}
+
+.page-footer__map-container {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  min-height: 362px;
+}
+
+.page-footer__contacts .container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
+@media (min-width: $tablet-width) {
+  .page-footer__contacts {
+    padding: 55px 0;
+  }
+
+  .page-footer__contacts .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .page-footer__logo {
+    width: 128px;
+    display: block;
+    margin: 0;
+  }
+
+  .page-footer__map,
+  .page-footer__map .container,
+  .page-footer__map-container {
+    min-height: 400px;
+  }
 }

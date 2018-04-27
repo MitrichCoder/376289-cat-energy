@@ -45,3 +45,30 @@
   background-color: $primary-color;
   text-transform: uppercase;
 }
+
+@media (min-width: $desktop-width) {
+  .other-goods {
+    flex-direction: column;
+    width: 895px;
+    margin-right: 80px;
+  }
+
+  .other-goods__item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .other-goods__title {
+    width: 245px;
+  }
+
+  .other-goods__table {
+    width: 285px;
+    margin-bottom: 10px;
+  }
+
+  .other-goods__button {
+    width: 245px;
+  }
+}

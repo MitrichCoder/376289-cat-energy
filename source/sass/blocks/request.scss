@@ -2,11 +2,24 @@
   margin-bottom: 31px;
 }
 
+// .request .container {
+//   padding-right: 20px;
+//   padding-left: 20px;
+// }
+
 .request__fieldset {
   margin: 0;
   margin-bottom: 11px;
   padding: 0;
   border: none;
+}
+
+.request__fieldset--info,
+.request__fieldset--contacts,
+.request__fieldset--comments,
+.request__fieldset--more {
+  padding-right: 20px;
+  padding-left: 20px;
 }
 
 .request-list {
@@ -15,6 +28,7 @@
 
 .request-item {
   display: flex;
+  width: 100%;
   align-items: center;
   margin-bottom: 13px;
 }
@@ -70,7 +84,7 @@
   border: 1px solid #e6e6e6;
 }
 
-.request__input[name="weight"] {
+/*.request__input[name="weight"] {
   max-width: 206px;
 }
 
@@ -80,6 +94,22 @@
 
 .request__input[name="email"] {
   max-width: 216px;
+}*/
+
+.request__label--weight {
+  width: 85px;
+}
+
+.request__label--age {
+  width: 186px;
+}
+
+.request__label--email {
+  width: 70px;
+}
+
+.request__label--tel {
+  width: 65px;
 }
 
 input[type="radio"]:checked ~ .request__label--radio::after {
@@ -167,4 +197,103 @@ input[type="checkbox"]:checked ~ .request__label--checkbox::after {
 
 .request__fieldset--more {
   margin-bottom: 19px;
+}
+
+.request__button--wrap {
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-content__discription {
+    width: 330px;
+  }
+
+  .request__fieldset--info,
+  .request__fieldset--target,
+  .request__fieldset--contacts,
+  .request__fieldset--comments,
+  .request__fieldset--more {
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .request-list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .request__fieldset--more .request-item {
+    width: 285px;
+    margin-right: 60px;
+  }
+
+  .request__label--age {
+    width: 133px;
+  }
+
+  .request__button--wrap {
+    display: flex;
+    padding-right: 30px;
+    padding-left: 30px;
+  }
+
+  .request__button {
+    width: 285px;
+  }
+
+  .request__form-comment {
+    width: 195px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .request {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .request__fieldset--info,
+  .request__fieldset--contacts,
+  .request__fieldset--target,
+  .request__fieldset--comments,
+  .request__fieldset--more {
+    padding-right: 0;
+    padding-left: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+
+  .request__fieldset--info,
+  .request__fieldset--target {
+    width: 570px;
+  }
+
+  .request__fieldset--contacts,
+  .request__fieldset--comments {
+    width: 1220px;
+  }
+
+  .request__fieldset--contacts .request-list {
+    display: flex;
+  }
+
+  .request__fieldset--contacts .request-item {
+    width: 570px;
+  }
+
+  .request__fieldset--contacts .request-item:first-child {
+    margin-right: 80px;
+  }
+
+  .request__fieldset--more .request-item {
+    width: 245px;
+    margin-right: 60px;
+  }
+
+  .request__button--wrap {
+    padding-right: 40px;
+    padding-left: 40px;
+  }
 }
