@@ -29,6 +29,7 @@
 }
 
 .more-goods__title {
+  margin-bottom: 5px;
   padding-top: 65px;
   font-family: $heading-font;
   color: $heading-color;
@@ -40,6 +41,8 @@
 }
 
 .more-goods__discription {
+  margin-top: 0;
+  margin-bottom: 19px;
   font-size: 12px;
 }
 
@@ -51,8 +54,51 @@
   font-family: $heading-font;
   color: $heading-color;
   height: 40px;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   background-color: #f2f2f2;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .more-goods {
+    border-bottom: none;
+    border: 1px solid #e6e6e6;
+    background-color: $white;
+  }
+
+  .more-goods::before {
+    top: 80px;
+    width: 60px;
+    height: 2px;
+    margin-left: -30px;
+  }
+
+  .more-goods::after {
+    top: 51px;
+    width: 2px;
+    height: 60px;
+    margin-left: -1px;
+  }
+
+  .more-goods__title {
+    width: 150px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    padding-top: 161px;
+    font-size: 20px;
+  }
+
+  .more-goods__discription {
+    width: 180px;
+    margin: 0 auto;
+    margin-bottom: 87px;
+    font-size: 16px;
+  }
+
+  .more-goods__button {
+    width: auto;
+    margin-left: 38px;
+    margin-right: 38px;
+  }
 }

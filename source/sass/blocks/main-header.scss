@@ -1,6 +1,6 @@
 .main-header {
   position: relative;
-  margin-bottom: 22px;
+  /*margin-bottom: 22px;*/
   background-color: $white;
 }
 
@@ -25,9 +25,12 @@
     width: 680px;
     height: 696px;
     top: 0;
-    left: 52%;
-    /*z-index: 0;*/
-    background-image: url("../img/index-background-desktop@2x.jpg");
+    left: 50%;
+    background-image: url("../img/index-background-desktop@1x.jpg");
     background-size: cover;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+    }
   }
 }

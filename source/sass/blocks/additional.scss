@@ -1,22 +1,107 @@
 .additional {
-  padding-left: 20px;
-  padding-right: 20px;
+  margin-bottom: 35px;
 }
 
 .additional__title {
+  margin: 0;
+  margin-bottom: 34px;
+  padding-left: 20px;
+  padding-right: 20px;
+  position: relative;
   font-family: $heading-font;
   color: $heading-color;
   font-size: 24px;
   line-height: 24px;
   font-weight: 300;
+
+  &::before,
+  &::after {
+    content: "";
+    display: block;
+    margin: auto;
+    position: absolute;
+    top: 14px;
+  }
+
+  &::before {
+    left: 0;
+    right: 0;
+    height: 3px;
+    background-color: $primary-color;
+    z-index: -2;
+  }
+
+  &::after {
+    left: 0;
+    width: 267px;
+    height: 3px;
+    background-color: $white;
+    z-index: -1;
+  }
+}
+
+.additional__wrap {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .additional {
+    margin-bottom: 77px;
+  }
+
+  .additional__title {
+    margin-bottom: 80px;
+    padding-left: 68px;
+    font-size: 36px;
+    line-height: 36px;
+
+    &::before,
+    &::after {
+      top: 22px;
+    }
+
+    &::before {
+      width: 99vw;
+      left: 50%;
+      margin-left: -50vw;
+    }
+
+    &::after {
+      left: 29px;
+      width: 412px;
+    }
+  }
+
+  .additional__wrap {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+
+  .other-goods__item {
+    padding-top: 14px;
+    padding-bottom: 17px;
+    border: 1px solid #cdcdcd;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .additional {
-    padding-bottom: 85px;
+    margin-bottom: 0;
+    padding-bottom: 17px;
   }
 
   .additional__wrap {
     display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .additional__title {
+    padding-left: 40px;
+
+    &::after {
+      left: 0;
+    }
   }
 }

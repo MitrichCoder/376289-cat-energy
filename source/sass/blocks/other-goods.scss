@@ -1,9 +1,10 @@
 .other-goods {
   @include list-reset();
+  margin-bottom: 39px;
 }
 
 .other-goods__item {
-  padding-top: 15px;
+  padding-top: 14px;
   padding-bottom: 17px;
   border-top: 1px solid #cdcdcd;
 
@@ -14,7 +15,7 @@
 
 .other-goods__title {
   margin: 0;
-  margin-bottom: 10px;
+  margin-bottom: 9px;
   font-family: $heading-font;
   color: $heading-color;
   font-size: 16px;
@@ -26,6 +27,11 @@
 .other-goods__table {
   width: 100%;
   margin-bottom: 10px;
+}
+
+.other-goods__discr,
+.other-goods__price {
+  padding: 0;
 }
 
 .other-goods__price {
@@ -46,17 +52,56 @@
   text-transform: uppercase;
 }
 
-@media (min-width: $desktop-width) {
+@media (min-width: $tablet-width) {
   .other-goods {
-    flex-direction: column;
-    width: 895px;
-    margin-right: 80px;
+    margin-bottom: 70px;
   }
 
   .other-goods__item {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
+    padding-left: 38px;
+    padding-right: 38px;
+  }
+
+  .other-goods__title {
+    padding-top: 11px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .other-goods__table {
+    align-self: flex-end;
+    width: 227px;
+    margin-bottom: 0;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .other-goods__discr {
+    text-align: right;
+  }
+
+  .other-goods__price {
+    width: 88px;
+  }
+
+  .other-goods__button {
+    width: 100%;
+    margin-top: 17px;
+    margin-bottom: 9px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .other-goods {
+    flex-direction: column;
+    width: 895px;
+    margin-right: 80px;
   }
 
   .other-goods__title {
@@ -70,5 +115,38 @@
 
   .other-goods__button {
     width: 245px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .other-goods__item {
+    min-height: 72px;
+    padding: 0;
+    border: none;
+    border-top: 1px solid #cdcdcd;
+
+    &:last-child {
+      border-bottom: 1px solid #cdcdcd;
+    }
+  }
+
+  .other-goods__title {
+    padding: 0;
+    margin: 0;
+    margin-right: 35px;
+  }
+
+  .other-goods__table {
+    margin: auto;
+  }
+
+  .other-goods__discr {
+    text-align: left;
+  }
+
+  .other-goods__button {
+    margin: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
