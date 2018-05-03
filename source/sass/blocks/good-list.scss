@@ -16,30 +16,39 @@
 
 .good-list__title {
   margin: 0;
-  padding-top: 25px;
+  margin-bottom: 12px;
+  padding-top: 21px;
+  padding-right: 50px;
   font-family: $heading-font;
   color: $heading-color;
   font-size: 16px;
   line-height: 20px;
   font-weight: 300;
+  text-transform: uppercase;
 }
 
 .good-list__table {
   width: 100%;
   font-size: 12px;
+  line-height: 12px;
 }
 
 .good-list__value {
   text-align: right;
 }
 
+.good-list__img {
+  height: 140px;
+}
+
 .good-list__button {
   width: 100%;
+  /*margin-bottom: -3px;*/
   font-family: $heading-font;
   color: $white;
   height: 40px;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   background-color: $primary-color;
 }
 
@@ -55,14 +64,67 @@
     flex-direction: column;
     align-items: center;
     width: 324px;
-    margin-bottom: 60px;
+    margin-bottom: 143px;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 40px;
     background-color: $grey;
     border: none;
+  }
+
+  .good-list__img-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    min-height: 208px;
+    margin-top: -82px;
+    margin-bottom: 10px;
+  }
+
+  .good-list__img {
+    height: auto;
+  }
+
+  .good__data {
+    margin-bottom: 30px;
+  }
+
+  .good__data,
+  .good-list__button {
+    width: 248px;
+  }
+
+  .good-list__title {
+    margin: 0 auto;
+    margin-bottom: 18px;
+    width: 130px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    font-size: 20px;
+    line-height: 20px;
+  }
+
+  .good-list__table {
+    font-size: 16px;
+    line-height: 16px;
+    border-collapse: collapse;
+  }
+
+  .good-list__parametr,
+  .good-list__value {
+    padding: 8px 0;
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 
 @media (min-width: $desktop-width) {
   .good-list__item {
     width: 245px;
+  }
+
+  .good__data,
+  .good-list__button {
+    width: 168px;
   }
 }

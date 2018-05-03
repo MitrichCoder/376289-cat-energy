@@ -11,6 +11,7 @@
   position: relative;
   margin-bottom: 20px;
   padding: 20px;
+  padding-top: 18px;
   background-color: $grey;
 
   &::before,
@@ -147,6 +148,7 @@
   .categories {
     margin-left: 40px;
     margin-right: 40px;
+    margin-bottom: 50px;
   }
 
   .categories__list {
@@ -157,7 +159,7 @@
 
   .categories__item {
     width: 570px;
-    padding: 80px 56px 61px 52px;
+    padding: 76px 56px 61px 52px;
   }
 
   .categories__item--strong {
@@ -189,7 +191,11 @@
   }
 
   .categories__title {
-    margin-bottom: 68px;
-    padding-left: 135px;
+    margin-bottom: 74px;
+    padding-left: 163px;
+  }
+
+  .categories__description {
+    margin-bottom: 16px;
   }
 }

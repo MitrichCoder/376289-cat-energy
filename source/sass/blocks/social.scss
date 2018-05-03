@@ -41,4 +41,27 @@
     border: none;
     min-height: auto;
   }
+
+  .social__link--vkontakte {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social__link--instagram {
+    width: 23px;
+    height: 23px;
+    margin-left: 28px;
+    margin-right: 28px;
+  }
+
+  .social__link--facebook {
+    width: 14px;
+    height: 28px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    margin-left: 19px;
+  }
 }

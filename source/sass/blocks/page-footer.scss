@@ -4,19 +4,19 @@
 
 .page-footer__map {
   position: relative;
-  min-height: 362px;
+  /*min-height: 400px;*/
   background-color: #fdf7ef;
 
   .container {
     position: relative;
-    height: 362px;
+    height: 400px;
     padding: 0;
   }
 }
 
 .page-footer__map-image {
   margin: 0 auto;
-  width: 320px;
+  /*width: 320px;*/
 }
 
 .page-footer__contacts {
@@ -28,31 +28,33 @@
   width: 128px;
   display: block;
   margin: 0 auto;
-  margin-bottom: 31px;
+  margin-bottom: 27px;
 }
 
 .page-footer__map-container {
   position: absolute;
   top: 0;
   width: 100%;
-  min-height: 362px;
+  min-height: 400px;
 }
 
 .page-footer__contacts .container {
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 
 @media (min-width: $tablet-width) {
   .page-footer__contacts {
-    padding: 55px 0;
+    padding: 47px 0 54px;
   }
 
   .page-footer__contacts .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   .page-footer__logo {
@@ -61,9 +63,16 @@
     margin: 0;
   }
 
-  .page-footer__map,
+  /*.page-footer__map,
   .page-footer__map .container,
   .page-footer__map-container {
     min-height: 400px;
+  }*/
+}
+
+@media (min-width: $desktop-width) {
+  .page-footer__contacts .container {
+    padding-left: 40px;
+    padding-right: 32px;
   }
 }
