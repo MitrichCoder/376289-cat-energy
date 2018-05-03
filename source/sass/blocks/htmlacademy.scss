@@ -7,7 +7,7 @@
   @include list-reset();
 }
 
-.htmlacademy__link {
+.htmlacademy__text {
   font-size: 16px;
   color: $text-color;
 }
@@ -15,6 +15,20 @@
 .htmlacademy__logo {
   width: 40px;
   margin-top: 5px;
+  fill: #666666;
+}
+
+.htmlacademy:focus {
+  outline: none;
+}
+
+.htmlacademy:focus .htmlacademy__logo,
+.htmlacademy:hover .htmlacademy__logo {
+  fill: #68b738;
+}
+
+.htmlacademy:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -22,7 +36,7 @@
     min-height: auto;
   }
 
-  .htmlacademy__item--text {
+  .htmlacademy__text {
     margin-right: 16px;
   }
 }

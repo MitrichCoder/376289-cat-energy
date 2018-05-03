@@ -81,7 +81,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="good-list__button button" href="#">Заказать</a>
+              <a class="good-list__button button button--green" href="#">Заказать</a>
             </li>
 
             <li class="good-list__item">
@@ -115,7 +115,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="good-list__button button" href="#">Заказать</a>
+              <a class="good-list__button button button--green" href="#">Заказать</a>
             </li>
 
             <li class="good-list__item">
@@ -149,7 +149,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="good-list__button button" href="#">Заказать</a>
+              <a class="good-list__button button button--green" href="#">Заказать</a>
             </li>
 
             <li class="good-list__item">
@@ -183,7 +183,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="good-list__button button" href="#">Заказать</a>
+              <a class="good-list__button button button--green" href="#">Заказать</a>
             </li>
 
             <li class="good-list__item">
@@ -217,7 +217,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="good-list__button button" href="#">Заказать</a>
+              <a class="good-list__button button button--green" href="#">Заказать</a>
             </li>
 
             <li class="good-list__item">
@@ -251,7 +251,7 @@
                   </tr>
                 </table>
               </div>
-              <a class="good-list__button button" href="#">Заказать</a>
+              <a class="good-list__button button button--green" href="#">Заказать</a>
             </li>
 
             <li class="good-list__item">
@@ -285,13 +285,13 @@
                   </tr>
                 </table>
               </div>
-              <a class="good-list__button button" href="#">Заказать</a>
+              <a class="good-list__button button button--green" href="#">Заказать</a>
             </li>
 
             <li class="good-list__item more-goods">
               <h3 class="more-goods__title">Показать ещё 100500 товаров</h3>
               <p class="more-goods__discription">На самом деле вкусов гораздо больше!</p>
-              <a class="more-goods__button" href="#">Показать все</a>
+              <a class="more-goods__button button--grey" href="#">Показать все</a>
             </li>
           </ul>
         </section>
@@ -312,7 +312,7 @@
                     <td class="other-goods__price">200 Р</td>
                   </tr>
                 </table>
-                <a class="other-goods__button" href="#">Заказать</a>
+                <a class="other-goods__button button--green" href="#">Заказать</a>
               </li>
 
               <li class="other-goods__item">
@@ -325,7 +325,7 @@
                     <td class="other-goods__price">50 Р.</td>
                   </tr>
                 </table>
-                <a class="other-goods__button" href="#">Заказать</a>
+                <a class="other-goods__button button--green" href="#">Заказать</a>
               </li>
 
               <li class="other-goods__item">
@@ -338,7 +338,7 @@
                     <td class="other-goods__price">100 Р</td>
                   </tr>
                 </table>
-                <a class="other-goods__button" href="#">Заказать</a>
+                <a class="other-goods__button button--green" href="#">Заказать</a>
               </li>
 
               <li class="other-goods__item">
@@ -351,7 +351,7 @@
                     <td class="other-goods__price">300 Р.</td>
                   </tr>
                 </table>
-                <a class="other-goods__button" href="#">Заказать</a>
+                <a class="other-goods__button button--green" href="#">Заказать</a>
               </li>
             </ul>
 
@@ -380,30 +380,38 @@
 
       <div class="page-footer__contacts">
         <div class="container">
-          <a class="page-footer__logo">
+          <a class="page-footer__logo" href="index.html">
             <img class="page-footer__logo-txt" src="img/logo-footer.svg" width="128" height="24" alt="Cat Energy">
           </a>
           <ul class="social">
             <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank">Мы в Вконтакте</a>
+              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy" target="_blank" aria-label="Вконтакте">
+                <svg class="social__icon social__icon--vkontakte" width="22" height="12">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-vk"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" target="_blank">Мы в Инстаграме</a>
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy" target="_blank" aria-label="Инстаграм">
+                <svg class="social__icon social__icon--instagram" width="16" height="16">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-insta"></use>
+                </svg>
+              </a>
             </li>
             <li class="social__item">
-              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank">Мы в Фейсбуке</a>
-            </li>
-          </ul>
-          <ul class="htmlacademy">
-            <li class="htmlacademy__item">
-              <a class="htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</a>
-            </li>
-            <li class="htmlacademy__item">
-              <a class="htmlacademy__link" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
-                <img class="htmlacademy__logo" src="img/htmlacademy.svg" width="27" height="34" alt="Логотип HTML Academy">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy" target="_blank" aria-label="Фэйсбук">
+                <svg class="social__icon social__icon--facebook" width="10" height="19">
+                  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-fb"></use>
+                </svg>
               </a>
             </li>
           </ul>
+          <a class="htmlacademy" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+            <span class="htmlacademy__text" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">HTML Academy</span>
+            <svg class="htmlacademy__logo" width="27" height="34" aria-label="Логотип HTML Academy">
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="img/sprite.svg#icon-htmlacademy"></use>
+            </svg>
+          </a>
         </div>
       </div>
 
