@@ -81,6 +81,12 @@
     margin-top: 2px;
     background: url("../img/icon-right-arrow-long.svg") no-repeat 50% 50%;
   }
+
+  &:hover::after {
+    width: 33px;
+    height: 11px;
+    background: url("../img/icon-right-arrow-verylong.svg") no-repeat 50% 50%;
+  }
 }
 
 @media (min-width: $tablet-width) {

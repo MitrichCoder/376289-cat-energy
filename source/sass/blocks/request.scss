@@ -164,7 +164,36 @@
   line-height: 18px;
   font-weight: 300;
   text-transform: uppercase;
-  border: 1px solid #e6e6e6;
+  border: 2px solid transparent;
+  box-shadow: inset 0 0 0 1px #e6e6e6;
+
+  &:hover {
+    box-shadow: inset 0 0 0 1px #cdcdcd;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+    box-shadow: none;
+    border: 2px solid #444444;
+
+    & ~ .request__icon {
+      fill: #68b738;
+    }
+  }
+
+  &:focus:invalid {
+    border: 2px solid #ff8282;
+
+    & ~ .request__icon {
+      fill: #ff8282;
+    }
+  }
+}
+
+.request__label--radio:active,
+.request__label--checkbox:active {
+  opacity: 0.3;
 }
 
 .request__input--email,
