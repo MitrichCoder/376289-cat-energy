@@ -117,8 +117,9 @@ var showBeforeAfter = function() {
 
 // actions
 exampleRange.addEventListener('input', slideImg);
-butonBefore.addEventListener('click', showBefore);
+exampleRange.addEventListener('change', slideImg); // IE
 
+butonBefore.addEventListener('click', showBefore);
 butonAfter.addEventListener('click', showAfter);
 butonToggle.addEventListener('click', showBeforeAfter);
 
