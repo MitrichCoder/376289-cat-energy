@@ -21,7 +21,7 @@ if (brouserWidth < 768) {
 } else if (brouserWidth < 1300) {
   slideOffset = 340;
 } else {
-  slideOffset = 25;
+  slideOffset = 41;
 }
 
 // main function
@@ -32,7 +32,7 @@ var slideImg = function() {
   exampleBefore.style.clip='rect(0px, ' + rectBorder + 'px, 517px, 0px)';
   exampleAfter.style.clip='rect(0px, 690px, 517px, ' + rectBorder + 'px)';
 
-  exampleBlock.style.backgroundImage = '-webkit-linear-gradient(0deg, rgba(255, 255, 255, 0.3) calc(50% + ' + rectBorder + 'px - ' + slideOffset + 'px), rgba(255, 255, 255, 0) calc(50% + ' + rectBorder + 'px - ' + slideOffset + 'px)), -webkit-linear-gradient(90deg, #eaeaea 462px, transparent 462px)';
+  exampleBlock.style.backgroundImage = 'linear-gradient(90deg, rgba(255, 255, 255, 0.3) calc(50% + ' + rectBorder + 'px - ' + slideOffset + 'px), rgba(255, 255, 255, 0) calc(50% + ' + rectBorder + 'px - ' + slideOffset + 'px)), linear-gradient(0deg, #eaeaea 462px, transparent 462px)';
 
   //console.log(rectBorder, rangeValue);
 }
@@ -56,7 +56,7 @@ window.onresize = function() {
     slideImg();
     return;
   } else {
-    slideOffset = 25;
+    slideOffset = 41;
     slideImg();
     return;
   }

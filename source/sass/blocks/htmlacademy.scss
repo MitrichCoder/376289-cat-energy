@@ -27,7 +27,8 @@
   fill: #68b738;
 }
 
-.htmlacademy:active {
+.htmlacademy:active .htmlacademy__logo,
+.htmlacademy:active .htmlacademy__text {
   opacity: 0.3;
 }
 

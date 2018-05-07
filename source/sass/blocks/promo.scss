@@ -1,5 +1,6 @@
 .promo {
   position: relative;
+  margin-bottom: 19px;
   padding-top: 3px;
   text-align: center;
   background-image: url("../img/index-background-mobile@1x.jpg");
@@ -52,9 +53,10 @@
   .promo {
     display: flex;
     flex-direction: column;
-    text-align: left;
     /*min-height: 823px;*/
     padding-bottom: 525px;
+    margin-bottom: 0px;
+    text-align: left;
     background: none;
   }
 
@@ -100,6 +102,10 @@
 
   .promo__title {
     padding-top: 90px;
+  }
+
+  .promo__slogan {
+    max-width: 460px;
   }
 
   .promo__img {
