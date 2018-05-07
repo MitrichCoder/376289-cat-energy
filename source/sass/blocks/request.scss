@@ -135,7 +135,6 @@
   width: 12px;
   height: 12px;
   border-radius: 50% 50%;
-  -webkit-box-shadow: 0 0 0 1px #ededed;
   box-shadow: 0 0 0 1px #ededed;
   border: 8px solid #ffffff;
   background-color: #ffffff;
@@ -278,6 +277,7 @@ input[type="checkbox"]:checked ~ .request__label--checkbox::after {
 }
 
 .request__input--textarea {
+  padding-right: 9px;
   min-height: 151px;
 }
 
@@ -287,10 +287,6 @@ input[type="checkbox"]:checked ~ .request__label--checkbox::after {
 
 .request__fieldset--more {
   margin-bottom: 19px;
-}
-
-.request__input--textarea {
-  padding-right: 9px;
 }
 
 .request__button--wrap {
@@ -385,7 +381,7 @@ input[type="checkbox"]:checked ~ .request__label--checkbox::after {
   }
 
   .request-list--target .request-item {
-    margin-bottom: 0px;
+    margin-bottom: 0;
   }
 
   .request__title {
