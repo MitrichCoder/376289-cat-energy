@@ -1,5 +1,5 @@
 .catalog {
-  margin-bottom: 19px;
+  margin-bottom: 30px;
 }
 
 .catalog__list {
@@ -39,6 +39,7 @@
 @media (min-width: $tablet-width) {
   .catalog {
     margin-top: 135px;
+    padding-top: 7px;
     padding-right: 30px;
     padding-left: 30px;
     margin-bottom: -79px;

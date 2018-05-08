@@ -239,11 +239,11 @@
   }
 
   .example__slider-item--before {
-    clip: rect(0, 345px, 517px, 0);
+    clip: rect(0, 337px, 517px, 0);
   }
 
   .example__slider-item--after {
-    clip: rect(0, 690px, 517px, 345px);
+    clip: rect(0, 690px, 517px, 337px);
   }
 
   .example__item:first-child {
@@ -511,7 +511,7 @@
   .example__lid {
     margin-bottom: 66px;
     padding-left: 0;
-    padding-right: 133px;
+    padding-right: 120px;
   }
 
   .example__list {
@@ -544,12 +544,21 @@
 
   .example__progress-wrap {
     margin-right: 0;
-    bottom: 50px;
+    bottom: auto;
+    top: 556px;
     left: 98px;
   }
 
   .example__slider-list {
     margin-bottom: 40px;
-    left: 35px;
+    left: 19px; //35
+  }
+
+  .example__slider-item--before {
+    clip: rect(0, 362px, 517px, 0);
+  }
+
+  .example__slider-item--after {
+    clip: rect(0, 690px, 517px, 362px);
   }
 }
