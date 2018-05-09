@@ -27,7 +27,7 @@
     background-image: url("../img/index-background-desktop@1x.jpg"),
       linear-gradient(to right, #ffffff 50%, #63a73a 50%, #63a73a 100%);
     background-size: 680px 100%, contain;
-    background-position: calc(50% + 357px) top ,top;
+    background-position: calc(50% + 357px) top, top;
     background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
