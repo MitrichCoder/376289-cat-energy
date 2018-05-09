@@ -6,7 +6,9 @@ var plumber = require("gulp-plumber");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
-var minify = require('gulp-csso');
+var minifycss = require('gulp-csso');
+var concat = require('gulp-concat')
+var minifyjs = require('gulp-minify');
 var rename = require('gulp-rename');
 var imagemin = require('gulp-imagemin');
 var webp = require('gulp-webp');
@@ -27,6 +29,7 @@ gulp.task('serve', ['style'], function() {
   });
 
   gulp.watch('source/sass/**/*.{scss,sass}', ['style']);
+  gulp.watch('source/js/**/*.js', ['scripts']);
   gulp.watch('source/*.html')
     .on('change', server.reload);
 });
@@ -41,27 +44,40 @@ gulp.task('copy', function() {
   return gulp.src([
     'source/fonts/**/*.{woff,woff2}',
     'source/img/**',
-    'source/js/**'
+    'source/js/**/*.min.js'
   ], {
     base: 'source'
   })
   .pipe(gulp.dest('build'));
 });
 
-// sass preprocessing
+// css
 gulp.task('style', function() {
-  gulp.src('source/sass/style.scss')
+  return gulp.src('source/sass/style.scss')
     .pipe(plumber())
     .pipe(sass({includePaths: require('node-normalize-scss').includePaths}))
     .pipe(postcss([
       autoprefixer()
     ]))
     .pipe(gulp.dest('build/css'))
-    .pipe(minify())
+    .pipe(minifycss())
     .pipe(rename('style.min.css'))
     .pipe(gulp.dest('build/css/'))
 
     .pipe(server.stream());
+});
+
+// js
+gulp.task('scripts', function() {
+  return gulp.src(['source/js/**/*.js', '!source/js/**/*.min.js'])
+    /*.pipe(minifyjs())*/
+    .pipe(minifyjs({
+      ext: {
+        min: '.min.js'
+      },
+      ignoreFiles: ['-min.js']
+    }))
+    .pipe(gulp.dest('build/js'));
 });
 
 // graphic - images
@@ -110,6 +126,7 @@ gulp.task('build', function(done) {
     'images',
     'webp',
     'sprite',
+    'scripts',
     'html',
     done
   );
