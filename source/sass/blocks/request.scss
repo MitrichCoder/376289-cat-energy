@@ -289,7 +289,7 @@ input[type="checkbox"]:checked ~ .request__label--checkbox::after {
   margin-bottom: 19px;
 }
 
-.request__button--wrap {
+.request__button-wrap {
   padding-right: 20px;
   padding-left: 20px;
 }
@@ -447,7 +447,7 @@ input[type="checkbox"]:checked ~ .request__label--checkbox::after {
     margin-bottom: 63px;
   }
 
-  .request__button--wrap {
+  .request__button-wrap {
     display: flex;
     margin-left: 40px;
     padding-right: 30px;
@@ -531,7 +531,7 @@ input[type="checkbox"]:checked ~ .request__label--checkbox::after {
     }
   }
 
-  .request__button--wrap {
+  .request__button-wrap {
     padding-right: 40px;
     padding-left: 0;
   }

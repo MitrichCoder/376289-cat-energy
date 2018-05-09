@@ -32,7 +32,13 @@ var slideImg = function() {
   exampleBefore.style.clip='rect(0px, ' + rectBorder + 'px, 517px, 0px)';
   exampleAfter.style.clip='rect(0px, 690px, 517px, ' + rectBorder + 'px)';
 
-  exampleBlock.style.backgroundImage = 'linear-gradient(90deg, rgba(255, 255, 255, 0.3) calc(50% + ' + rectBorder + 'px - ' + slideOffset + 'px), rgba(255, 255, 255, 0) calc(50% + ' + rectBorder + 'px - ' + slideOffset + 'px)), linear-gradient(0deg, #eaeaea 462px, transparent 462px)';
+  if (brouserWidth < 1300) {
+    exampleBlock.style.backgroundImage = 'linear-gradient(90deg, rgba(255, 255, 255, 0.3) calc(50% + ' + rectBorder + 'px - ' + slideOffset + 'px), rgba(255, 255, 255, 0) calc(50% + ' + rectBorder + 'px - ' + slideOffset + 'px)), linear-gradient(0deg, #eaeaea 462px, transparent 462px)';
+    console.log('up');
+  } else {
+    exampleBlock.style.backgroundImage = 'linear-gradient(90deg, rgba(255, 255, 255, 0.3) calc(50% + ' + rectBorder + 'px - ' + slideOffset + 'px), rgba(255, 255, 255, 0) calc(50% + ' + rectBorder + 'px - ' + slideOffset + 'px)), linear-gradient(180deg, transparent 213px, #eaeaea 213px)';
+    console.log('down');
+  }
 
   //console.log(rectBorder, rangeValue);
 }

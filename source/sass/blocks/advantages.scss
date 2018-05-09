@@ -151,8 +151,15 @@
     border-bottom: none;
   }
 
+  .advantages__list {
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
   .advantages__item {
     flex-basis: 245px;
+    margin-right: 80px;
     margin-bottom: 0;
     padding-right: 0;
 
@@ -162,5 +169,9 @@
       top: -37px;
       left: 117px;
     }
+  }
+
+  .advantages__item:nth-child(4n) {
+    margin-right: 0;
   }
 }

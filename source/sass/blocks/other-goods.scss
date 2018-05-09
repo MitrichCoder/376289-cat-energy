@@ -58,12 +58,15 @@
   }
 
   .other-goods__item {
+    padding-top: 14px;
+    padding-bottom: 17px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     padding-left: 38px;
     padding-right: 38px;
+    border: 1px solid #cdcdcd;
   }
 
   .other-goods__title {

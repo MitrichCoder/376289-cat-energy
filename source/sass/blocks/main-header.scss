@@ -24,21 +24,15 @@
   .main-header--index {
     margin-bottom: 80px;
     min-height: 696px;
-    background-image: linear-gradient(to right, #ffffff 50%, #63a73a 50%, #63a73a 100%);
-  }
-
-  .main-header--index::before {
-    content: "";
-    position: absolute;
-    width: 680px;
-    height: 696px;
-    top: 0;
-    left: 50%;
-    background-image: url("../img/index-background-desktop@1x.jpg");
-    background-size: cover;
+    background-image: url("../img/index-background-desktop@1x.jpg"),
+      linear-gradient(to right, #ffffff 50%, #63a73a 50%, #63a73a 100%);
+    background-size: 680px 100%, contain;
+    background-position: calc(50% + 357px) top ,top;
+    background-repeat: no-repeat;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-image: url("../img/index-background-desktop@2x.jpg"),
+        linear-gradient(to right, #ffffff 50%, #63a73a 50%, #63a73a 100%);
     }
   }
 }
